@@ -1,0 +1,59 @@
+{
+  "name": "@askeleven/ai-disclosure",
+  "version": "0.1.0",
+  "description": "Which laws say your AI agent must tell people it is an AI, and did this conversation do it? 47 rules across the US, EU, UK, Canada and Australia, each quoting the official text. Checker as CLI, library and MCP server. Zero dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "author": "AskEleven",
+  "homepage": "https://github.com/askeleven/ai-disclosure",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askeleven/ai-disclosure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/askeleven/ai-disclosure/issues"
+  },
+  "keywords": [
+    "ai-disclosure",
+    "chatbot",
+    "bot-disclosure",
+    "ai-act",
+    "compliance",
+    "ai-agents",
+    "voice-ai",
+    "companion-ai",
+    "regulation",
+    "mcp",
+    "mcp-server"
+  ],
+  "bin": {
+    "ai-disclosure": "bin/cli.js"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "src",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build:types": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build:types && npm test"
+  },
+  "types": "types/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^5.9.3"
+  }
+}
