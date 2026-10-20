@@ -156,7 +156,7 @@ const result = checkConversation(RULES, situation, transcript)
 result.verdict  // 'pass' | 'warn' | 'fail' | 'incomplete'
 ```
 
-The checker recognises English disclosures: "I'm an AI assistant", "you're chatting with a
+The checker recognizes English disclosures: "I'm an AI assistant", "you're chatting with a
 virtual assistant", "Ava here, your AI receptionist", "this call is automated". If yours is
 worded differently, pass it with `--phrase` or `phrases`.
 
