@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises'
 import { RULES, REVIEWED, CONTEXTS, CHANNELS, applicableRules, checkConversation, parseConversation, formatCheck, formatRules } from '../src/index.js'
 import { serve } from '../src/mcp.js'
 import { VERSION } from '../src/version.js'
+import { starHint } from './star-hint.js'
 
 const USAGE = `
 ai-disclosure rules --where <place> --channel <channel> [--context <fact>]...
@@ -196,6 +197,7 @@ function useColour(values) {
 main(process.argv.slice(2)).then(
   (code) => {
     process.exitCode = code
+    starHint('ai-disclosure', code, process.argv.slice(2))
   },
   (error) => {
     process.stderr.write(`${error?.stack ?? error}\n`)
