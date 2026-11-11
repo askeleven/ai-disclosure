@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.askeleven/ai-disclosure",
+  "title": "AI Disclosure",
+  "description": "Checks whether an AI conversation meets 47 AI-disclosure laws (US, EU, UK, CA, AU).",
+  "repository": {
+    "url": "https://github.com/askeleven/ai-disclosure",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/askeleven/ai-disclosure",
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@askeleven/ai-disclosure",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ]
+    }
+  ]
+}
