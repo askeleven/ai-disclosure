@@ -1,6 +1,7 @@
 {
   "name": "@askeleven/ai-disclosure",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.askeleven/ai-disclosure",
   "description": "Which laws say your AI agent must tell people it is an AI, and did this conversation do it? 47 rules across the US, EU, UK, Canada and Australia, each quoting the official text. Checker as CLI, library and MCP server. Zero dependencies.",
   "type": "module",
   "license": "MIT",
